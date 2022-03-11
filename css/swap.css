@@ -110,7 +110,9 @@
 .submain_container .buy-sell_container .trade_container {
   width: 100%;
   margin: 25px 0;
-  background-color: #394d6262;
+  background: #005e06;
+  background: -webkit-gradient(linear, left top, right top, from(#005e06), to(rgba(0, 28, 9, 0.692314)));
+  background: linear-gradient(90deg, #005e06 0%, rgba(0, 28, 9, 0.692314) 100%);
   border-radius: 15px;
   height: 50%;
   padding: 30px;
