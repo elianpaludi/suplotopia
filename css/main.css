@@ -7,7 +7,7 @@
     src: url('./fonts/webfonts/Duborics.otf');
 }
 
-.button-metamask {
+/* .button-metamask {
     background: transparent;
     border: 2px solid #105500;
     border-radius: 20px;
@@ -22,11 +22,29 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-left:15px;
+} */
+.metamask-btn{
+    /* margin-top: 15px; */
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
+.metamask-btn img{
+    width: 50px;
+    height: 50px;
+    transition: all 250ms;
+}
+.metamask-btn img:hover{
+    width: 55px;
+            height: 55px;
+}
 .suplotopia-header {
     width: 100%;
     height: 100%;
+}
+
+.img-suplotopia{
+    width:40px !important;
 }
 
 .suplotopia-header h1{
@@ -46,3 +64,5 @@
 .suplo-nav{
     font-family: 'Duborics';
 }
+
+

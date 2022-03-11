@@ -3607,6 +3607,10 @@ License: http://codecanyon.net/licenses
 @media (max-width: 1023px) {
   /* Responsive menu container */
   .primary-menu-responsive.primary-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
     overflow: visible; }
   .primary-menu .showhide {
     display: block; }
