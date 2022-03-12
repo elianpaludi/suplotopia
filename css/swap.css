@@ -17,6 +17,37 @@
   height: 55px;
 }
 
+.metamask-btn {
+  /* margin-top: 15px; */
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.metamask-btn img {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.metamask-btn img:hover {
+  width: 55px;
+  height: 55px;
+}
+
+.img-suplotopia {
+  width: 40px !important;
+}
+
+.primary-menu-menu {
+  text-transform: uppercase;
+}
+
+.suplo-nav {
+  font-family: 'Duborics';
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;

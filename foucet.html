@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Suplotopia - SWAP</title>
+
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme-styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/blocks.css" />
+    <link rel="stylesheet" type="text/css" href="css/widgets.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/foucet.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900,"
+      rel="stylesheet"
+    />
+
+    <!--Styles for RTL-->
+
+    <!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+  </head>
+  <body class="crumina-grid">
+    <header class="header" id="site-header">
+		<div class="container">
+			<div class="header-content-wrapper"> 
+				<a href="index.html" class="site-logo">
+					<img class="img-suplotopia"src="img/suplotopia-logo-background.png" alt="Suplotopia">
+					<h6 class="suplo-nav">SUPLOTOPIA</h6>
+				</a>
+
+				<nav id="primary-menu" class="primary-menu">
+
+					<!-- menu-icon-wrapper -->
+
+					<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+						<span class="mob-menu--title">Menu</span>
+						<span id="menu-icon-wrapper" class="menu-icon-wrapper">
+							<svg width="1000px" height="1000px">
+								<path id="pathD"
+									d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800">
+								</path>
+								<path id="pathE" d="M 300 500 L 700 500"></path>
+								<path id="pathF"
+									d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200">
+								</path>
+							</svg>
+						</span>
+					</a>
+
+					<ul class="primary-menu-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+
+						<li class="menu-item-has-children">
+							<a href="/swap.html">Swap</a>
+						</li>
+
+						<li class="menu-item-has-children">
+							<a href="#">Stake</a>
+						</li>
+
+						<li class="menu-item-has-mega-menu menu-item-has-children">
+							<a href="#">Liquidity </a>
+						</li>
+
+						<li class="menu-item-has-mega-menu menu-item-has-children">
+							<a href="#">White Paper</a>
+
+						</li>
+						<li class="menu-item-has-mega-menu menu-item-has-children">
+							<a href="#">Tutorial</a>
+						</li>
+					</ul>
+					<button class="metamask-btn"><img src="/img/icons/metamask.png" width="50px" height="50px" alt=""></button>
+				</nav>
+
+
+			</div>
+		</div>
+	</header>
+    <section class="section-container">
+        <div class="title">
+            <h1>STAKE</h1>
+        </div>
+        <div class="main-deposit-container">
+            <div class="btn-container">
+                <button>Recompound</button>
+            </div>
+            <div class="deposit-container">
+                <div class="deposit-title">
+                    <p>DEPOSIT</p>
+                </div>
+                <div class="amount-container">
+                    <p>Amount: <span>N/A</span></p>
+                    <p>SUPLO Bal: <span>N/A</span></p>
+                </div>
+                <div class="input-container">
+                    <input placeholder="SUPLO" type="text">
+                    <button>MAX</button>
+                </div>
+                <p>Minimum of 1 SUPLO is required</p>
+                <p>10% tax is charged on deposits</p>
+            </div>
+            <div class="btn-container">
+                <button>CLAIM</button>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <img src="" alt="">
+                <p>Bonus:</p> 
+                <p><span>N/A</span> SUPLO</p>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <p>Available:</p> 
+                <p><span>N/A</span> SUPLO </p>
+                <!-- p>SUPLO = <span>N/A</span> USDT</p> -->
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <p>Deposits:</p> 
+                <p><span>N/A</span> SUPLO</p>
+                <!-- <p>SUPLO = <span>N/A</span> USDT</p> -->
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <p>Claimed:</p>
+                <p><span>N/A</span> SUPLO</p>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <p>Max Payout:</p>
+                <p><span>N/A</span> SUPLO</p>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <p>Team members:</p>
+                <p><span>N/A</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/method-assign.js"></script>
+
+    <!-- jQuery first, then Other JS. -->
+
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script src="js/js-plugins/leaflet.js"></script>
+    <script src="js/js-plugins/MarkerClusterGroup.js"></script>
+    <script src="js/js-plugins/crum-mega-menu.js"></script>
+    <script src="js/js-plugins/waypoints.js"></script>
+    <script src="js/js-plugins/jquery-circle-progress.js"></script>
+    <script src="js/js-plugins/segment.js"></script>
+    <script src="js/js-plugins/bootstrap.js"></script>
+    <script src="js/js-plugins/imagesLoaded.js"></script>
+    <script src="js/js-plugins/jquery.matchHeight.js"></script>
+    <script src="js/js-plugins/jquery-countTo.js"></script>
+    <script src="js/js-plugins/Headroom.js"></script>
+    <script src="js/js-plugins/jquery.magnific-popup.js"></script>
+    <script src="js/js-plugins/popper.min.js"></script>
+    <script src="js/js-plugins/particles.js"></script>
+    <script src="js/js-plugins/perfect-scrollbar.js"></script>
+    <script src="js/js-plugins/jquery.datetimepicker.full.js"></script>
+    <script src="js/js-plugins/svgxuse.js"></script>
+    <script src="js/js-plugins/select2.js"></script>
+    <script src="js/js-plugins/smooth-scroll.js"></script>
+    <script src="js/js-plugins/sharer.js"></script>
+    <script src="js/js-plugins/isotope.pkgd.min.js"></script>
+    <script src="js/js-plugins/ajax-pagination.js"></script>
+    <script src="js/js-plugins/swiper.min.js"></script>
+    <script src="js/js-plugins/material.min.js"></script>
+    <script src="js/js-plugins/orbitlist.js"></script>
+    <script src="js/js-plugins/highstock.js"></script>
+    <script src="js/js-plugins/bootstrap-datepicker.js"></script>
+    <script src="js/js-plugins/TimeCircles.js"></script>
+    <script src="js/js-plugins/ion.rangeSlider.js"></script>
+
+    <!-- FontAwesome 5.x.x JS -->
+
+    <script defer src="fonts/fontawesome-all.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- SVG icons loader -->
+    <script src="js/svg-loader.js"></script>
+    <!-- /SVG icons loader -->
+  </body>
+</html>
