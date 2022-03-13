@@ -59,10 +59,15 @@ header .suplo-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-container .btn-container button {
-  width: 350px;
+  margin: 5px auto;
+  width: 50%;
   height: 35px;
   background-color: transparent;
   border: 1px solid #39a143;
@@ -76,12 +81,12 @@ header .suplo-nav {
   background-color: #39a14348;
 }
 
-.section-container .main-deposit-container {
+.section-container .main-article-container {
   width: 80%;
   margin: 0 auto;
 }
 
-.section-container .main-deposit-container .deposit-container {
+.section-container .main-article-container .article-container {
   width: 100%;
   margin: 25px 0;
   background: #005e06;
@@ -94,17 +99,17 @@ header .suplo-nav {
   color: white !important;
 }
 
-.section-container .main-deposit-container .deposit-container p {
+.section-container .main-article-container .article-container p {
   color: white;
   margin: 5px 0;
 }
 
-.section-container .main-deposit-container .deposit-container .deposit-title p {
+.section-container .main-article-container .article-container .article-title p {
   font-size: 2rem;
   letter-spacing: 3px;
 }
 
-.section-container .main-deposit-container .deposit-container .amount-container {
+.section-container .main-article-container .article-container .amount-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,50 +121,48 @@ header .suplo-nav {
       justify-content: space-around;
 }
 
-.section-container .main-deposit-container .deposit-container .amount-container span {
+.section-container .main-article-container .article-container .amount-container span {
   font-weight: 800;
   letter-spacing: 3px;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container {
+.section-container .main-article-container .article-container .input-container {
   width: 100%;
   height: 30px;
   margin: 10px 0;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container input {
+.section-container .main-article-container .article-container .input-container input {
   margin: 0;
   padding: 0;
   border: none;
   border-radius: 5px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
   background: white;
-  width: 70%;
+  width: 50%;
   height: 100%;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container input::-webkit-input-placeholder {
+.section-container .main-article-container .article-container .input-container input::-webkit-input-placeholder {
   color: gray;
   text-align: center;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container input:-ms-input-placeholder {
+.section-container .main-article-container .article-container .input-container input:-ms-input-placeholder {
   color: gray;
   text-align: center;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container input::-ms-input-placeholder {
+.section-container .main-article-container .article-container .input-container input::-ms-input-placeholder {
   color: gray;
   text-align: center;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container input::placeholder {
+.section-container .main-article-container .article-container .input-container input::placeholder {
   color: gray;
   text-align: center;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container button {
+.section-container .main-article-container .article-container .input-container button {
   width: 50px;
   cursor: pointer;
   height: 100%;
@@ -175,16 +178,15 @@ header .suplo-nav {
   font-size: 1rem;
 }
 
-.section-container .main-deposit-container .deposit-container .input-container button:hover {
+.section-container .main-article-container .article-container .input-container button:hover {
   background: #1f6d27;
 }
 
-.section-container .main-deposit-container .deposit-container .claim-container {
-  width: 75%;
-  margin: 0 auto;
+.section-container .main-article-container .article-container .buy-btn {
+  margin: 25px 0;
 }
 
-.section-container .main-deposit-container .deposit-container .claim-container button {
+.section-container .main-article-container .article-container .buy-btn button {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,16 +197,20 @@ header .suplo-nav {
   background-color: #39a143;
   color: white;
   border-radius: 5px;
-  width: 100px;
+  width: 25%;
   padding: 5px;
   text-align: center;
-  margin: 5px 0;
+  margin: 5px auto;
   -webkit-transition: all 150m;
   transition: all 150m;
 }
 
-.section-container .main-deposit-container .deposit-container .claim-container button:hover {
+.section-container .main-article-container .article-container .buy-btn button:hover {
   background: #1f6d27;
+}
+
+.section-container .main-article-container .article-container .sell-btn button {
+  width: 30% !important;
 }
 
 .section-container .cards-container {
@@ -253,4 +259,13 @@ header .suplo-nav {
   color: white;
   margin-right: 5px;
 }
-/*# sourceMappingURL=foucet.css.map */
+
+@media (max-width: 500px) {
+  .input-container input {
+    width: 150px !important;
+  }
+  .buy-btn button, .sell-btn button {
+    width: 150px !important;
+  }
+}
+/*# sourceMappingURL=liquidity.css.map */
