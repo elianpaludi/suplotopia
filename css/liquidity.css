@@ -231,7 +231,7 @@ header .suplo-nav {
 }
 
 .section-container .cards-container .card {
-  text-align: center;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,16 +239,23 @@ header .suplo-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   margin: 5px 30px;
 }
 
 .section-container .cards-container .card img {
-  margin: 0 0 5px 5px;
   width: 50px;
   height: 50px;
 }
 
 .section-container .cards-container .card p {
+  margin-top: 5px;
   text-align: center;
   max-width: 100px;
   font-size: 0.8rem;
@@ -257,7 +264,6 @@ header .suplo-nav {
 
 .section-container .cards-container .card p span {
   color: white;
-  margin-right: 5px;
 }
 
 @media (max-width: 500px) {

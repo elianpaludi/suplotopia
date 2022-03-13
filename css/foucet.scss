@@ -58,14 +58,14 @@ header {
       border-radius: 5px;
       color: white;
       transition: all 250ms;
-      &:hover{
-          background-color: #39a14348;
+      &:hover {
+        background-color: #39a14348;
       }
     }
   }
   .main-deposit-container {
-      width: 80%;
-      margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
     .deposit-container {
       width: 100%;
       margin: 25px 0;
@@ -84,11 +84,11 @@ header {
         color: white;
         margin: 5px 0;
       }
-      .deposit-title{
-          p{
-              font-size: 2rem;
-              letter-spacing: 3px;
-          }
+      .deposit-title {
+        p {
+          font-size: 2rem;
+          letter-spacing: 3px;
+        }
       }
       .amount-container {
         display: flex;
@@ -163,36 +163,37 @@ header {
       }
     }
   }
-  .cards-container{
+  .cards-container {
     display: flex;
     width: 90%;
     flex-direction: row;
+    // border: 1px solid red;
     flex-wrap: wrap;
     margin: 50px auto;
     justify-content: center;
-    .card{
+    .card {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      // border: 1px solid green;
+      margin: 5px 30px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        // border: 1px solid rgba(238, 130, 238, 0.219);
-        margin: 5px 30px;
-        img{
-          margin: 0 0 5px 5px ;
-
-          width: 50px;
-          height: 50px;
+        max-width: 100px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+        font-weight: 800;
+        span {
+          color: white;
         }
-        p{
-          text-align: center;
-          // border: 1px solid red;
-          max-width: 100px;
-            font-size: 0.8rem;
-            font-weight: 800;
-            span{
-                color: white;
-                margin-right: 5px;
-            }
-        }
+      }
     }
-}
+  }
 }
