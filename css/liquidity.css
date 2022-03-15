@@ -30,6 +30,7 @@ header .suplo-nav {
 }
 
 .section-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +44,7 @@ header .suplo-nav {
 }
 
 .section-container .title {
-  margin-top: 150px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +64,7 @@ header .suplo-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 150px;
 }
 
 .section-container .btn-container button {

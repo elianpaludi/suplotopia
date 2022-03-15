@@ -98,7 +98,7 @@ var CRUMINA = {};
 			var b = 0;
 			var vec = this.rotateX(rotXCounter).rotateY(rotYCounter).rotateZ(rotZCounter).perspectiveProjection(fov, dist);
 
-			this.color = "rgb(" + r + ", " + g + ", " + b;
+			this.color = "rgb(98, 187, 71)"
 			ctx.fillStyle = this.color;
 			ctx.fillRect(vec.x, vec.y, particleSize, particleSize);
 		};
@@ -763,7 +763,7 @@ var CRUMINA = {};
 				},
 				{
 					name: 'WOOX',
-					color: '#ffba00'
+					color: '#f30'
 				}
 			];
 

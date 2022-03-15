@@ -66,16 +66,23 @@
   height: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   .balance-container {
     display: flex;
-    margin-top: 75px;
+    justify-content: space-around;
     text-align: center;
-    flex-direction: column;
-    gap: 25px;
-    width: 20%;
+    flex-direction: row;
+    // gap: 25px;
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
     .bal {
+      // border: 1px solid red;
+      width: 175px !important;  
+      height: 175px !important;
+      flex-wrap: wrap;
+      margin: 25px;
       p {
         margin: 5px;
         span {
@@ -86,13 +93,13 @@
   }
   .buy-sell_container {
     display: flex;
-    width: 75%;
+    width: 90%;
+    margin: 0 auto;
     max-width: 75;
     height: 100%;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin: 0;
     padding: 0;
     .trade_container {
       width: 100%;
@@ -279,9 +286,6 @@
 }
 
 @media(min-width:1023px){
-  *{
-      background: rgb(255, 0, 0) !important;
-  }
   h6.suplo-nav{
       display:none;
   }
