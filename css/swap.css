@@ -49,6 +49,7 @@
 }
 
 .main-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,6 +84,7 @@
 }
 
 .submain_container {
+  z-index: 5;
   width: 90%;
   height: 100%;
   margin: 0 auto;
@@ -125,6 +127,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 75%;
+  max-width: 75;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -158,6 +161,8 @@
 
 .submain_container .buy-sell_container .trade_container .trade_title {
   font-size: 2rem;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .submain_container .buy-sell_container .trade_container .trade_title span {
@@ -169,6 +174,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 75%;
+  margin: 0 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -183,9 +190,9 @@
 }
 
 .submain_container .buy-sell_container .trade_container .trade_input-container {
-  width: 100%;
+  width: 75%;
   height: 30px;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .submain_container .buy-sell_container .trade_container .trade_input-container input {
@@ -196,8 +203,9 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   background: white;
-  width: 70%;
+  width: 75%;
   height: 100%;
+  max-height: 30px;
 }
 
 .submain_container .buy-sell_container .trade_container .trade_input-container input::-webkit-input-placeholder {
@@ -221,7 +229,7 @@
 }
 
 .submain_container .buy-sell_container .trade_container .trade_input-container button {
-  width: 5%;
+  width: 50px;
   cursor: pointer;
   height: 100%;
   border: none;
@@ -245,6 +253,12 @@
 
 .submain_container .buy-sell_container .trade_container .buy-btn_container {
   width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 
@@ -269,5 +283,91 @@
 
 .submain_container .buy-sell_container .trade_container .buy-btn_container .buy-btn:hover {
   background: #1f6d27;
+}
+
+@media (max-width: 950px) {
+  .submain_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 99%;
+  }
+  .submain_container .buy-sell_container {
+    width: 95%;
+  }
+  .submain_container .buy-sell_container .trade_container .trade_input-container {
+    margin: 10px auto;
+  }
+  .submain_container .buy-sell_container .trade_container .trade_input-container button {
+    top: 0px;
+  }
+  .submain_container .balance-container {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .submain_container .balance-container .bal {
+    width: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .trade_input-container button {
+    top: 1px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .trade_input-container button {
+    top: 1px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .trade_input-container input {
+    border-radius: 10px !important;
+  }
+  .trade_input-container button {
+    display: none;
+  }
+}
+
+.wallet {
+  border: 1px solid white;
+  width: 210px;
+  height: 50px;
+  margin-left: 25px;
+  border-radius: 50cm;
+  cursor: pointer;
+  color: #c0c7c7;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1023px) {
+  * {
+    background: red !important;
+  }
+  h6.suplo-nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=swap.css.map */

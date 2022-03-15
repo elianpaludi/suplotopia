@@ -50,8 +50,11 @@ header {
   .btn-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     button {
-      width: 350px;
+      margin: 5px auto;
+
+      width: 50%;
       height: 35px;
       background-color: transparent;
       border: 1px solid #39a143;
@@ -63,10 +66,10 @@ header {
       }
     }
   }
-  .main-deposit-container {
+  .main-article-container {
     width: 80%;
     margin: 0 auto;
-    .deposit-container {
+    .article-container {
       width: 100%;
       margin: 25px 0;
       background: rgb(0, 94, 6);
@@ -84,7 +87,7 @@ header {
         color: white;
         margin: 5px 0;
       }
-      .deposit-title {
+      .article-title {
         p {
           font-size: 2rem;
           letter-spacing: 3px;
@@ -109,10 +112,10 @@ header {
           padding: 0;
           border: none;
           border-radius: 5px;
-          border-top-right-radius: 0px;
-          border-bottom-right-radius: 0px;
+          // border-top-right-radius: 0px;
+          // border-bottom-right-radius: 0px;
           background: white;
-          width: 70%;
+          width: 50%;
           height: 100%;
           //   height: 35px;
           &::placeholder {
@@ -140,9 +143,10 @@ header {
           }
         }
       }
-      .claim-container {
-        width: 75%;
-        margin: 0 auto;
+      .buy-btn {
+        //   width: 75%;
+        //   justify-content: center;
+        margin: 25px 0;
         button {
           cursor: pointer;
           display: flex;
@@ -150,15 +154,21 @@ header {
           background-color: #39a143;
           color: white;
           border-radius: 5px;
-          width: 100px;
+          width: 25%;
           padding: 5px;
+        //   min-width: 15%;
           text-align: center;
           //   margin: 5px 0px 5px 150px;
-          margin: 5px 0;
+          margin: 5px auto;
           transition: all 150m;
           &:hover {
             background: #1f6d27;
           }
+        }
+      }
+      .sell-btn {
+        button {
+          width: 30% !important;
         }
       }
     }
@@ -166,28 +176,28 @@ header {
   .cards-container {
     display: flex;
     width: 90%;
-    flex-direction: row;
     // border: 1px solid red;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 50px auto;
     justify-content: center;
     .card {
+      // border: 1px solid green;
       width: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
       align-items: center;
-      // border: 1px solid green;
+      text-align: center;
       margin: 5px 30px;
       img {
         width: 50px;
         height: 50px;
       }
       p {
+        margin-top: 5px;
         text-align: center;
         max-width: 100px;
-        margin-top: 5px;
         font-size: 0.8rem;
         font-weight: 800;
         span {
@@ -196,4 +206,18 @@ header {
       }
     }
   }
+}
+
+@media (max-width: 500px) {
+    .input-container{
+        input{
+            width: 150px !important;
+        }
+    }
+    .buy-btn, .sell-btn{
+        button{
+            width: 150px !important;
+        }
+    }
+
 }

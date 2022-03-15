@@ -38,6 +38,7 @@
   font-family: 'Duborics';
 }
 .main-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,6 +60,7 @@
 }
 
 .submain_container {
+  z-index:5;
   width: 90%;
   //   height: 50%;
   height: 100%;
@@ -85,6 +87,7 @@
   .buy-sell_container {
     display: flex;
     width: 75%;
+    max-width: 75;
     height: 100%;
     justify-content: center;
     text-align: center;
@@ -111,6 +114,9 @@
       }
       .trade_title {
         font-size: 2rem;
+        // border: 1px solid violet;
+        width: 75%;
+        margin: 0 auto;
         // text-align: left;
         span {
           font-weight: 1000;
@@ -119,6 +125,9 @@
       }
       .amount-bal_container {
         display: flex;
+        width: 75%;
+        margin: 0 auto;
+        // border: 1px solid violet;
         flex-direction: row;
         // width: 60%;
         justify-content: space-around;
@@ -128,9 +137,10 @@
         }
       }
       .trade_input-container {
-        width: 100%;
+        width: 75%;
         height: 30px;
-        margin: 10px 0;
+        // border: 1px solid violet;
+        margin: 10px auto;
         input {
           margin: 0;
           padding: 0;
@@ -139,8 +149,9 @@
           border-top-right-radius: 0px;
           border-bottom-right-radius: 0px;
           background: white;
-          width: 70%;
+          width: 75%;
           height: 100%;
+          max-height: 30px;
           //   height: 35px;
           &::placeholder {
             color: gray;
@@ -148,7 +159,7 @@
           }
         }
         button {
-          width: 5%;
+          width: 50px;
           cursor: pointer;
           height: 100%;
           //   height: 36px;
@@ -170,6 +181,9 @@
       }
       .buy-btn_container {
         width: 75%;
+        display: flex;
+        justify-content: center;
+        // border: 1px solid violet;
         margin: 0 auto;
         .buy-btn {
           cursor: pointer;
@@ -190,5 +204,85 @@
         }
       }
     }
+  }
+}
+@media (max-width: 950px){
+  .submain_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 99%;
+    .buy-sell_container{
+      width: 95%;
+      .trade_container{
+        .trade_input-container{
+          // height: px;
+          margin: 10px auto;
+          button{
+            top: 0px;
+          }
+        }
+      }
+    }
+    .balance-container{
+      width: 90%;
+      margin: 0 auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .bal{
+        width: 30%;
+        // border: 1px solid red
+      }
+    }
+  }
+}
+@media(max-width:800px){
+  .trade_input-container{
+    button{
+      top:1px !important;
+    }
+  }
+}
+
+@media(max-width:600px){
+  .trade_input-container{
+    button{
+      top: 1px !important;
+
+    }
+  }
+}
+
+@media(max-width:500px){
+  .trade_input-container{
+    input{
+      border-radius: 10px !important; 
+    }
+    button{
+      display: none;
+    }
+  }
+}
+
+.wallet{
+  border: 1px solid white;
+  width:210px;
+  height: 50px;
+  margin-left:25px;
+  border-radius: 50cm;
+  cursor:pointer;
+  color: rgb(192, 199, 199);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media(min-width:1023px){
+  *{
+      background: rgb(255, 0, 0) !important;
+  }
+  h6.suplo-nav{
+      display:none;
   }
 }
