@@ -38,6 +38,7 @@
   font-family: 'Duborics';
 }
 .main-container {
+  z-index: 250;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -298,7 +299,14 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-
+.slippage{
+  font-size: 0.6rem;
+  width: 50%;
+  margin: 5px auto !important;
+  // background-color: red;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
 @media(min-width:1023px){
   h6.suplo-nav{
       display:none;

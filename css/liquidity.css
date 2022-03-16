@@ -30,6 +30,7 @@ header .suplo-nav {
 }
 
 .section-container {
+  z-index: 250;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

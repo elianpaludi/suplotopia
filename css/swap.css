@@ -49,6 +49,7 @@
 }
 
 .main-container {
+  z-index: 250;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,6 +378,14 @@
   color: #c0c7c7;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.slippage {
+  font-size: 0.6rem;
+  width: 50%;
+  margin: 5px auto !important;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 1023px) {
