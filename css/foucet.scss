@@ -44,9 +44,18 @@ header {
   flex-direction: column;
   justify-content: center;
   .title {
-    margin-top: 150px;
+    // margin-top: 150px;
+    // display: flex;
+    // justify-content: center;
     display: flex;
     justify-content: center;
+    margin: 50px 0 50px 0;
+    h1 {
+      font-size: 10vw;
+      text-align: center;
+      margin: 0;
+      letter-spacing: 1px;
+    }
   }
   .btn-container {
     display: flex;
@@ -198,5 +207,10 @@ header {
         }
       }
     }
+  }
+}
+@media(max-width:800px){
+  .title{
+    margin: 125px 0 50px 0 !important;
   }
 }
