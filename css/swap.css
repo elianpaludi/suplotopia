@@ -76,11 +76,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 150px 0 50px 0;
+  margin: 50px 0 50px 0;
 }
 
 .main-container .fountain-title h1 {
-  letter-spacing: 15px;
+  font-size: 10vw;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .submain_container {
@@ -343,6 +346,9 @@
   .trade_input-container button {
     top: 1px !important;
   }
+  .fountain-title {
+    margin: 125px 0 50px 0 !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -362,9 +368,10 @@
 
 .wallet {
   border: 1px solid white;
-  width: 210px;
-  height: 50px;
+  width: 150px;
+  height: 35px;
   margin-left: 25px;
+  font-size: 0.8rem;
   border-radius: 50cm;
   cursor: pointer;
   color: #c0c7c7;
