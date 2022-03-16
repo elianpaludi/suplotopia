@@ -48,6 +48,7 @@
 }
 
 .suplotopia-header h1{
+    z-index: 250;
     font-family: 'Duborics';
     font-size: 11vw;
     margin-top:150px;

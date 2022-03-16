@@ -39,6 +39,7 @@ header {
 }
 
 .section-container {
+  z-index: 250;
   width: 100%;
   display: flex;
   flex-direction: column;
