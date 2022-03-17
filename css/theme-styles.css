@@ -4805,7 +4805,10 @@ nav li.menu-item-has-mega-menu ul.mega-menu-row li {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+  }
   .sub-footer {
     padding: 0; }
   .footer {

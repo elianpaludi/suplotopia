@@ -5,8 +5,14 @@
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-bottom: 50px; }
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 50px; 
+}
+
+.footer-logo{
+  width: 50vw;
+}
 
 /*------------- #W-HELP --------------*/
 .w--help {
