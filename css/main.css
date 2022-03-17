@@ -42,7 +42,6 @@
     width: 100%;
     height: 100%;
 }
-
 .img-suplotopia{
     width:40px !important;
 }
@@ -54,8 +53,21 @@
     margin-top:150px;
     text-align: center;
     position: relative;
-    bottom:25vh;
+    bottom:20vh;
     letter-spacing: 1px;
+}
+.suplotopia-header h3{
+    z-index: 250;
+    max-width: 55%;
+    position: relative;
+    bottom: 20vh;
+    /* border:1px solid red; */
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 3px;
 }
 
 .primary-menu-menu{
@@ -88,4 +100,17 @@ nav{
 .footertitle h6{
     padding: 0;
     font-size: 2rem;
+}
+
+@media(max-width:700px){
+    .suplotopia-header h3{
+        max-width: 80% ;
+        font-size: 0.8rem !important;
+    }
+}
+@media(max-width:320px){
+    .suplotopia-header h3{
+        max-width: 80% ;
+        font-size: 0.5rem !important;
+    }
 }
